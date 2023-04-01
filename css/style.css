@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.background{
+    background:  rgba(0, 0, 0, 0.7) url(../img/bg2.png);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.navbar{
+    display: flex;
+    background-color: #31323c;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-list{
+    width: 40%;
+    padding: 15px;
+    display: flex;
+    list-style: none;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.nav-list li{
+    text-decoration: none;
+    margin: 0px 26px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav-list li a:hover{
+    color: burlywood;
+}
+
+
+.leftNav{
+    width: 60%;
+    display: flex;
+    margin: 3px 25px;
+}
+
+
+
+.leftNav h1{
+    font-size: 20px;
+    color: cornsilk;
+    padding: 6px 15px;
+    display: flex;
+    font-family: 'Akaya Telivigala', cursive;
+    align-items: center;
+}
+
+.intro{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.firstHalf{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 55px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-small{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+.heading{
+  text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 45px;
+  color: #31323c;
+  padding: 5px 0px;
+}
+
+.box-main{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.aboutPara{
+    width: 60%;
+    padding: 45px 50px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.aboutImg{
+    width: 248px;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+.projectPara{
+    font-size: 18px;
+    width: 50%;
+    color: #290848;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.secImg{
+    display: flex;
+    flex-direction: column;
+    margin: 4px 0px;
+    margin-bottom: 57px;
+}
+
+.img-part{
+    display: flex;
+    flex-direction: row;
+}
+
+.projectImg {
+    position: relative;
+    height: 203px;
+    margin: 13px 0px;
+}
+
+.img-desc {
+    position: absolute;
+    top: 29px;
+    bottom: -30px;
+    left: 41px;
+    right: 41px;
+    background: #d3d5ec;
+    color: black;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.projectImg:hover .img-desc {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-text{
+    margin: 25px; 
+    text-align: center;
+    color: black;
+    font-family:  'Ubuntu', sans-serif;
+    font-size: 25px;
+}
+
+.img-btn{
+    margin: 0px 117px;
+    border: 2px solid #333131;
+    border-radius: 30px;
+    width: 110px;
+    font-size: 18px;
+    padding: 10px;
+    background: none;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.img-btn:hover{
+    background-color: rgb(182, 195, 197);
+}
+  
+.multiImg{
+    width: 350px;
+    margin: 28px 40px;
+    border-radius: 20px;
+    border: 3px solid black;
+    height: 200px;
+}
+
+
+.contact{
+    background-color: #dad6d6;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.form-input{
+    margin: 0px 20px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #efebe7;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 40%;
+    outline: none;
+}
+
+.label{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.form label{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 8px;
+    color: #31323c;
+}
+
+.btn{
+    border: 2px solid grey;
+    border-radius: 30px;
+    margin:  16px auto;
+    width: 110px;
+    font-size: 18px;
+    padding: 10px;
+    background: none;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+.social-site{
+    display: flex;
+}
+
+.leftSec{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+}
+
+.myContact{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+.myContact p{
+    margin: 8px 13px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.small-logo{
+    width: 32px;
+    margin: 6px;
+}
+
+.rightSec{
+    display: flex;
+    color: grey;
+    margin: 32px auto;
+
+}
+
+.big-logo{
+    width: 45px;
+    height: 50px;
+    margin: auto 10px;
+    color: grey;
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.success{
+    margin: 137px 0px;
+}
+
+.success p{
+    color: white;
+    width: 65%;
+    align-items: center;
+    text-align: center;
+    font-size: 34px;
+    background-color: rgb(121, 118, 118);
+    border: 2px solid black;
+    border-radius: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 23px 30px;
+    margin: auto;
+   
+}
+
